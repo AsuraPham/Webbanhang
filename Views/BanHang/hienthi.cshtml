@@ -1,0 +1,25 @@
+﻿@model IEnumerable<banhang.Models.BanHang>
+
+@{
+    ViewBag.Title = "hienthi";
+    Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
+}
+
+<h2>hienthi</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pirce)
+        </th>
+        <th></th>
+    </tr>
+
+
+</table>
